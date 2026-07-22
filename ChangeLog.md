@@ -50,6 +50,7 @@ bug fixes:
 *  increased Sonic synthesis activation threshold -- Danstiv
 *  fixed IPA/phoneme output ignoring prevPh/prevPhW conditions (regression since #2082): restores linking-j suppression after i-vowels, German r-flap, etc. -- Alexander Epaneshnikov
 *  fixed reads of stale phoneme-table pointers after a mid-clause phoneme-table switch -- Alexander Epaneshnikov
+*  fixed crash when synthesizing mixed-script text that switches phoneme table mid-clause (e.g. a Latin word or ordinal under a non-Latin voice) -- Alexander Epaneshnikov
 *  fixed dictionary compilation leaking bogus entries from over-length list lines -- Ramees Muhammed
 *  fixed Sinhala ZWJ conjunct clusters being read as separate letters instead of one conjunct -- Ramees Muhammed
 *  fixed Arabic text being spelled letter-by-letter under non-Arabic voices -- Ramees Muhammed
